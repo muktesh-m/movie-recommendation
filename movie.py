@@ -11,7 +11,7 @@ st.title("Movie Recommendation System")
 @st.cache_data
 def load_data():
     # Replace the path with the correct path to your movies dataset
-    movies_data = pd.read_csv(r'C:\Users\KIIT\Downloads\movies.csv', encoding='latin-1', low_memory=False)
+    movies_data = pd.read_csv(r'movies.csv', encoding='latin-1', low_memory=False)
     return movies_data
 
 movies_data = load_data()
